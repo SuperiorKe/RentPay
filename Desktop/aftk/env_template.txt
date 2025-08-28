@@ -1,0 +1,11 @@
+# M-Pesa API Credentials
+MPESA_CONSUMER_KEY=your_consumer_key_here
+MPESA_CONSUMER_SECRET=your_consumer_secret_here
+MPESA_SHORTCODE=your_shortcode_here
+MPESA_PASSKEY=your_passkey_here
+
+# M-Pesa Environment (true for sandbox, false for production)
+MPESA_SANDBOX=true
+
+# Callback URL for payment notifications
+MPESA_CALLBACK_URL=http://localhost:5000/mpesa/callback
