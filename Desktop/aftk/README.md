@@ -39,6 +39,11 @@ cd RentPay
 python quick_setup.py
 ```
 
+### 🎬 See Demo
+```bash
+python demo.py
+```
+
 ### 📋 Manual Setup
 ```bash
 # 1. Install dependencies
