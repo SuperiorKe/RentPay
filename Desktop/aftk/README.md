@@ -32,41 +32,31 @@ A groundbreaking rent payment solution that combines USSD technology with M-Pesa
 
 ## 🚀 Quick Start
 
-### 1. Clone Repository
+### ⚡ One-Command Setup
 ```bash
 git clone https://github.com/SuperiorKe/RentPay.git
 cd RentPay
+python quick_setup.py
 ```
 
-### 2. Install Dependencies
+### 📋 Manual Setup
 ```bash
+# 1. Install dependencies
 pip install -r requirements.txt
-```
 
-### 3. Configure Environment Variables
-```bash
-# Copy environment templates
+# 2. Configure environment
 cp env_template.txt .env
-cp sms_env_template.txt .env
+# Edit .env with your credentials
 
-# Edit .env files with your credentials
-# M-Pesa API credentials
-# SMS provider credentials
+# 3. Run applications
+python ussd.py              # USSD system (port 5000)
+python landlord_dashboard.py # Dashboard (port 5001)
 ```
 
-### 4. Run Applications
-
-#### **USSD Payment System**
-```bash
-python ussd.py
-# Runs on http://localhost:5000
-```
-
-#### **Landlord Dashboard**
-```bash
-python landlord_dashboard.py
-# Runs on http://localhost:5001
-```
+### 🔑 Required Credentials
+- **M-Pesa**: Consumer Key, Secret, Shortcode, Passkey
+- **SMS**: Choose Africa's Talking, Twilio, or Generic
+- **Detailed setup**: See [SETUP.md](SETUP.md)
 
 ## 📱 USSD Flow
 
